@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DTS Link - Options</title>
+<style type="text/css">
+h1 {font-family:Verdana,Helvetica,sans-serif;}
+h2 {font-family:Verdana,Helvetica,sans-serif;}
+h3 {font-family:Verdana,Helvetica,sans-serif;}
+p {font-family:Verdana,Helvetica,sans-serif;}
+</style>
+</head>
+
+<body>
+<h2 class="verdana"><img src="icon-48.png" /> <b>DTS Link - Options</b></h2>
+Performance Mode:
+<select id="DTSLink_performance">
+ <option value="high">High</option>
+ <option value="medium" selected="selected">Medium</option>
+ <option value="low">Low</option>
+ <option value="vlow">Very Low</option>
+</select><br />
+<i>Select "Low" or "Very Low" if experiencing hanging or slowness.</i><br />
+<br />
+Tooltip Threshold:
+<input type="text" id="DTSLink_threshold" value="350" size="4"> <br />
+<i>This is the number of DTS links on a page above which the extension will not bother trying to create tooltips.</i><br />
+<i>A value of 0 disables the threshold</i><br />
+<br>
+Disable Tooltips:
+<input type="checkbox" id="DTSLink_disablett"> <br />
+<i>Check this box if experiencing hanging or slowness.</i><br />
+<br>
+Debug Mode:
+<input type="checkbox" id="DTSLink_debug"> <br />
+<br>
+Enable Old DTS Font Fix:
+<input type="checkbox" id="DTSLink_oldFontFix" checked="true"> <br />
+Old DTS Font Face Override:
+<input type="text" id="DTSLink_overrideFont" value="Courier New"> <br />
+Old DTS Font Size Override:
+<input type="text" id="DTSLink_overrideSize" value="175%"> <br />
+<br>
+<div id="status"></div>
+<button id="save">Save</button>
+</body>
+
+<script src="options.js"></script>
+
+</html>

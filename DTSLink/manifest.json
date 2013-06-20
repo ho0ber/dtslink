@@ -1,0 +1,23 @@
+{
+ "content_scripts": [ {
+    "matches": ["http://*/*", "https://*/*", "file://*/*"], 
+	"exclude_globs": ["*google.com*", "*gmail.com*"],
+    "js": ["jquery-1.8.3.min.js", "content.js"],
+	"all_frames": true
+  }],
+ "name": "DTS Link",
+ "options_page": "options.html",
+ "update_url": "http://www.samuelcolburn.com/DTSLink/updates.php",
+ "description": "Creates DTS links automatically from text strings like \"CS LAB 11111\"",
+ "homepage_url": "http://samuelcolburn.com/DTSLink",
+ "icons": {
+     "48": "icon-48.png"},
+ "permissions": [
+	 "storage",
+     "tabs",
+     "http://*/*",
+     "https://*/*"
+ ],
+ "version": "1.1.2",
+ "manifest_version": 2
+}
