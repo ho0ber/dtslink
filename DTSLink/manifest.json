@@ -2,7 +2,7 @@
  "content_scripts": [ {
     "matches": ["http://*/*", "https://*/*", "file://*/*"], 
 	"exclude_globs": ["*google.com*", "*gmail.com*"],
-    "js": ["jquery-1.8.3.min.js", "content.js"],
+    "js": ["jquery.min.js", "content.js"],
 	"all_frames": true
   }],
  "name": "DTS Link",
